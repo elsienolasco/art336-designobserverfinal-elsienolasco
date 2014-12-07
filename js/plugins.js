@@ -26,5 +26,5 @@
 
 // /@prepros-append vendor/fitter-happier-text.js
 // /@prepros-append vendor/scroll.js
-// /@prepros-append vendor/equal-height.js
+// @prepros-append vendor/equal-height.js
 // @prepros-append vendor/height-offset.js

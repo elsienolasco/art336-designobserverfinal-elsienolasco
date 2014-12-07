@@ -8,20 +8,20 @@ Module Rules
 
 
 svg {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     fill: $color;
 }
 
-.top svg path {
-    fill: $background-color;
-    transition: fill 400ms linear;
-}
-
-.top a:hover svg path {
-    fill: darken($background-color, 12%);
-    transition: fill 400ms linear;
-}
+//.top svg path {
+//    fill: $background-color;
+//    transition: fill 400ms linear;
+//}
+//
+//.top a:hover svg path {
+//    fill: darken($background-color, 12%);
+//    transition: fill 400ms linear;
+//}
