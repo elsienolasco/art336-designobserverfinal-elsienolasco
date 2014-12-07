@@ -17,12 +17,19 @@ Layout Rules
 .navigation li a {
     display: inline-block;
     padding: 1em 0.5em;
-    color: $color;
+    color: #fff;
     text-decoration: none;
     border-style: none;
     @include fontSize (14px);
     padding: 0 50px 0 4px;
 }
+
+
+.navigation li a:hover {
+    color: darken(#fff, 50%);
+    transition: color 400ms linear;
+}
+
 
 
 //FOOTER
@@ -68,13 +75,13 @@ header[role="banner"] {
 }
 
 
-header[role="banner"] img {
-    border: 8px solid $background-color;
-    width: 360px;
-	height: 360px;
-    text-align: center;
-    margin-top: 20px;
-}
+//header[role="banner"] img {
+//    border: 8px solid $background-color;
+//    width: 360px;
+//	height: 360px;
+//    text-align: center;
+//    margin-top: 20px;
+//}
 
 header[role="banner"] a {
     color: $background-color;
