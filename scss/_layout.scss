@@ -26,7 +26,7 @@ Layout Rules
 
 
 .navigation li a:hover {
-    color: darken(#fff, 50%);
+    color: darken(#fff, 90%);
     transition: color 400ms linear;
 }
 
@@ -37,22 +37,24 @@ Layout Rules
 
 
 
-footer[role="bottom"] {
+footer {
     //animation: colorchange-font 5s linear 1s infinite alternate;
     color: $color;
     background-color: $colortwo;
+    display: inline-grid;
     @include body-font-regular;
-    line-height: 1;
-    padding: 4px 8px 8px 8px;
+    text-align: justify;
+    height: 90px;
+    position: sticky;
 }
 
-footer[role="bottom"] svg {
+footer svg {
     color: $color;
     display: inline-block;
     float: right;
-    margin: 15px 5px 15px 5px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    padding: 5px 10px 5px 10px;
 
 }
 

@@ -14,14 +14,16 @@ $colortwo: #242424;
 
 //FOOTER
 
-$footer-height: 100px;
+$footer-height: 300px;
 
 
 //GUTTERS
 
 $gutters: 20px;
 
-
+body {
+    @include body-font-regular;
+}
 
 h1{
     @include fontSize (15px);
@@ -35,7 +37,7 @@ h2 {
     @include fontSize (15px);
     @include headline-font;
     color: $color;
-    margin: 15px 5px 5px 25px;
+    margin: 5px 5px 5px 25px;
 
 }
 
@@ -76,7 +78,13 @@ li {
     margin: auto;
     @include fontSize (12px);
     padding-bottom: 5px;
+    text-decoration: none;
 }
+
+ul {
+    text-decoration: none;
+}
+
 
 em {
     @include body-font-regular;
@@ -93,6 +101,18 @@ p {
     padding-bottom: 10px;
 }
 
+img {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
 
 
+a {
+    text-decoration: none;
+}
 
