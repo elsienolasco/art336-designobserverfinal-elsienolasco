@@ -29,30 +29,26 @@ Layout Rules
 
 
 
-.wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto $footer-height * -1;
-}
-
-.sticky {
-	height: $footer-height; 
-}
 
 footer[role="bottom"] {
-  background-color: $colortwo;
-	height: $footer-height;
-  h1 { 
-    padding-top: 20px!important;
-  }
-}
-
-footer[role="bottom"] p {
+    //animation: colorchange-font 5s linear 1s infinite alternate;
     color: $color;
-    @include fontSize (14px);
+    background-color: $colortwo;
+    @include body-font-regular;
+    line-height: 1;
+    padding: 4px 8px 8px 8px;
+}
+
+footer[role="bottom"] svg {
+    color: $color;
+    display: inline-block;
+    float: right;
+    margin: 15px 5px 15px 5px;
+    width: 20px;
+    height: 20px;
 
 }
+
 
 //BODY
 
@@ -100,101 +96,4 @@ header[role="banner"] svg {
 //PICTURES
 
 
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-	}
-* html .clearfix             { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-.wrapper {
-  text-align: center;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  text-align: left;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.photo-grid {
-  position: relative;
-  max-width: 100%;
-  word-wrap: break-word;
-}
-
-.photo-grid ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: 1px solid #bbb;
-}
-
-.photo-grid li {
-  float: left;
-  position: relative;
-  width: 25%;
-  border: 1px solid #bbb;
-}
-
-@media only screen and (max-width: 960px) {
-  .container {
-    max-width: 960px;
-  }
-  
-  .photo-grid li {
-    width: 33.333%;
-  }
-  
-  .photo-grid li:last-child {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 600px;
-  }  
-
-  .photo-grid li {
-    width: 50%;
-  }
-  
-  .photo-grid li:last-child {
-    display: inline-block;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .container {
-    max-width: 300px;
-  } 
-
-  .photo-grid li {
-    width: 100%;
-  }
-  
-  .photo-grid li:last-child {
-    display: inline-block;
-  }
-}

@@ -25,3 +25,96 @@ svg {
 //    fill: darken($background-color, 12%);
 //    transition: fill 400ms linear;
 //}
+
+
+
+
+//DEMO
+
+
+.work {
+    background: url('../img/10.jpg') no-repeat center center;
+    background-size: cover;
+    line-height: 300px;
+    @media (max-width: 480px) {
+        line-height: 150px;
+    }
+    height: 300px;
+    @media (max-width: 480px) {
+        height: 150px;
+    }
+    margin-top: $gutters;
+    text-align: center;       
+}
+
+
+
+
+
+
+
+
+
+
+
+//GRID DEMO SCSS ALTERED
+
+
+
+[class^="col-"] {
+    background-color: $colortwo;
+    color: $color;
+    min-height: 50px;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #b5b2b2;
+}
+
+.outer {
+    background-color: lighten($background-color,10%);
+}
+
+.fixed {
+    background-color: $color;
+    color: #fff;
+}
+
+.fixed [class^="col-"] {
+    background-color: transparent;
+    color: #fff;
+}
+ 
+.section-header {
+    background-color: $color;
+    color: #fff;
+}
+
+.section-header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+p:first-of-type {
+    margin-top: 0;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+.fixed h1 {
+    margin: 0;
+}
+
+.carousel-outer {
+    padding-top: 20px;
+}
+
+.row.carousel-outer [class^="col-"] {
+    background-color: transparent;
+}

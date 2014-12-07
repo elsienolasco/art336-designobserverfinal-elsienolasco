@@ -7,7 +7,7 @@ Base Rules
 
 //COLORS
 
-$background-color: #fff;
+$background-color: #D3D3D3;
 $color: #16DBCB;
 $colortwo: #242424;
 
@@ -20,3 +20,31 @@ $footer-height: 100px;
 //GUTTERS
 
 $gutters: 20px;
+
+
+
+h1, h2, h3 {
+    @include fontSize (14px);
+    @include headline-font;
+    color: $color;
+    margin: 15px 5px 5px 25px;
+}
+
+h4 {
+    @include fontSize (12px);
+    @include body-font-italic;
+    margin: none;
+    padding: none;
+
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+    margin: auto;
+    @include fontSize (12px);
+}
