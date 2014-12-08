@@ -44,7 +44,7 @@ footer {
     display: inline-grid;
     @include body-font-regular;
     text-align: justify;
-    height: 90px;
+//    height: 90px;
     position: sticky;
 }
 
@@ -52,9 +52,9 @@ footer svg {
     color: $color;
     display: inline-block;
     float: right;
-    width: 25px;
-    height: 25px;
-    padding: 5px 10px 5px 10px;
+    width: 30px;
+    height: 30px;
+    padding: 10px 10px 5px 10px;
 
 }
 

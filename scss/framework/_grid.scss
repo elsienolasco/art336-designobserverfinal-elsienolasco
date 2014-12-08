@@ -49,6 +49,9 @@ $padding: 6px;
 }
 
 .row .col-3 { 
+    @media screen and (min-width: $mobile) {
+        width: calc(50% - #{$gutter});
+    }
     @media screen and (min-width: $tablet) {
         width: calc(25% - #{$gutter});
     }
@@ -266,4 +269,7 @@ $padding: 6px;
     display: box;
     box-pack: center;
     box-align: center;
+    @media screen and (max-width: $tablet) {
+        display: block;
+    }
 }
