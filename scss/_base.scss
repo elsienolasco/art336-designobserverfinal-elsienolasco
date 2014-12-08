@@ -93,6 +93,13 @@ em {
     
 }
 
+
+i {
+    @include body-font-italic;
+    @include fontSize (14px);
+    color: #fff;
+}
+
 p {
     color: $color;
     margin: 5px 5px 5px 25px;
@@ -114,5 +121,28 @@ img:hover {
 
 a {
     text-decoration: none;
+}
+
+
+
+dl {
+    margin: 70px 70px 70px 70px;
+    @include body-font-regular;
+    
+}
+
+dt {
+    padding: 10px 10px 10px 10px;
+    @include fontSize (14px);
+    @include headline-font;
+    color: $color;
+    
+}
+
+dd {
+    padding: 10px 10px 10px 10px;
+    @include fontSize (14px);
+    @include body-font-regular;
+    color: $background-color;
 }
 
