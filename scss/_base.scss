@@ -37,7 +37,7 @@ h2 {
     @include fontSize (15px);
     @include headline-font;
     color: $color;
-    margin: 5px 5px 5px 25px;
+    margin: 5px 15px 5px 25px;
 
 }
 
@@ -45,7 +45,7 @@ h3 {
     @include fontSize (11px);
     @include body-font-regular;
     color: darken(#fff, 20%);
-    margin: 5px 5px 10px 25px;
+    margin: 5px 15px 10px 25px;
 
 }
 
@@ -68,10 +68,10 @@ h5 {
 }
 
 
-img {
-    height: auto;
-    max-width: 100%;
-}
+//img {
+//    height: auto;
+//    max-width: 100%;
+//}
 
 li {
     list-style-type: none;
@@ -109,13 +109,16 @@ p {
 }
 
 img {
-    opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+    height:auto;
+    max-width: 100%;
+    
+//    opacity: 1.0;
+//    filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
 img:hover {
     opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    transition: color 400ms linear;
 }
 
 
