@@ -146,7 +146,7 @@ dd {
     padding: 10px 10px 10px 10px;
     @include fontSize (14px);
     @include body-font-regular;
-    color: $background-color;
+    color: darken(#fff, 15%);
 }
 
 
